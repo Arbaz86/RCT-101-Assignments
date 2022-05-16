@@ -8,12 +8,13 @@ pnpm-debug.log*
 lerna-debug.log*
 
 node_modules
+.yarn
 dist
 dist-ssr
 *.local
 
 # Editor directories and files
-.yarn
+
 .vscode/*
 !.vscode/extensions.json
 .idea
