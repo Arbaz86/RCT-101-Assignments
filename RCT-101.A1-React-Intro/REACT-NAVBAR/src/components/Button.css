@@ -1,0 +1,12 @@
+.c-btn {
+  padding: 10px 28px;
+  font-size: 20px;
+  height: 42px;
+  border-radius: 20px;
+  border: 0px;
+  cursor: pointer;
+  background-color: rgb(21, 171, 185);
+  color: rgb(225, 225, 225);
+  font-weight: 600;
+  margin-top: 19px;
+}

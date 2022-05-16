@@ -1,0 +1,9 @@
+.link-a {
+  color: rgb(231, 231, 231);
+  text-decoration: none;
+  font-size: 1.25em;
+  margin-left: 1.2em;
+  margin-right: 1.2em;
+  padding: 5px 8px 10px;
+  font-weight: 400;
+}
