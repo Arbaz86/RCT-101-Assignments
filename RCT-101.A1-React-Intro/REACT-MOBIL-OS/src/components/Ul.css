@@ -1,0 +1,12 @@
+.main-div {
+  margin: 20px;
+}
+li {
+  margin-left: 30px;
+}
+.square {
+  list-style: square;
+}
+.circle {
+  list-style: circle;
+}
