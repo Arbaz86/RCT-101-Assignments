@@ -1,0 +1,68 @@
+.todo-list-div {
+  display: flex;
+  justify-content: center;
+  width: 30rem;
+  margin: 0 auto;
+  height: 2rem;
+  padding: 0.5rem 0.5rem 0.5rem;
+  border-radius: 5px;
+  margin-top: 1.7rem;
+  justify-content: space-between;
+  align-items: center;
+  background-image: linear-gradient(328deg, #af40ff, #5b42f3 50%, #00ddeb);
+  margin-bottom: 30px;
+}
+
+.striked-main-div {
+  display: flex;
+  justify-content: center;
+  width: 30rem;
+  margin: 0 auto;
+  height: 2rem;
+  padding: 0.5rem 0.5rem 0.5rem;
+  border-radius: 5px;
+  margin-top: 1.7rem;
+  justify-content: space-between;
+  align-items: center;
+  background-image: linear-gradient(
+    328deg,
+    #af40ff6f,
+    #5a42f358 50%,
+    #00dbeb65
+  );
+  margin-bottom: 30px;
+}
+
+.checked-value-div {
+  display: flex;
+  gap: 5px;
+  align-items: center;
+}
+
+.striked {
+  text-decoration: line-through;
+  color: rgb(231, 231, 231);
+  transition: color 0.5rem ease-in;
+}
+.todo-list-value {
+  font-size: 17px;
+  font-weight: bold;
+  color: #fff;
+}
+.delete-todo-btn {
+  height: 42px;
+  width: 70px;
+  cursor: pointer;
+  background-color: transparent;
+  border: 0px;
+}
+.delete-icon {
+  font-size: 38px;
+  text-align: center;
+  align-items: center;
+  color: #fff;
+}
+.checkbox-input {
+  height: 24px;
+  width: 24px;
+}
