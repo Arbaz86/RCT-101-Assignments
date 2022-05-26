@@ -1,0 +1,10 @@
+.square-container {
+  display: flex;
+  justify-content: center;
+}
+
+.td-cell {
+  border: 1px solid;
+  width: 100px;
+  height: 100px;
+}
