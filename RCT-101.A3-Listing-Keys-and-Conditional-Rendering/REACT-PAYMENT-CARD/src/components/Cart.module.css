@@ -1,0 +1,53 @@
+.cartOrange {
+  height: 450px;
+  width: 48rem;
+  margin: 20px auto;
+  display: flex;
+  justify-content: space-between;
+  background-color: #ffa826;
+}
+.cartWhite {
+  height: 450px;
+  width: 48rem;
+  margin: 20px auto;
+  display: flex;
+  justify-content: space-between;
+  background-color: #f0f0f0;
+}
+.flex_Left {
+  margin: 10px;
+  width: 50%;
+  padding: 20px;
+}
+.flex_Right {
+  margin: 10px 20px;
+  width: 10%;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.dateMob {
+  font-size: 23px;
+  font-weight: 500;
+}
+.btn {
+  padding: 10px 15px;
+  background-color: black;
+  color: white;
+  font-size: 18px;
+  margin-top: 20px;
+  cursor: pointer;
+}
+.heading {
+  font-size: 42px;
+}
+.arrowBtn {
+  height: 70px;
+  width: 100px;
+  background-color: transparent;
+  border: 0px;
+  outline: 0;
+  font-size: 50px;
+  cursor: pointer;
+}
