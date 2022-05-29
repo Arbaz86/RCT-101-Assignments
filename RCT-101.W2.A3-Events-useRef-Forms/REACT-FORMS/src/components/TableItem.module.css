@@ -1,0 +1,19 @@
+.table_div {
+  border-collapse: collapse;
+  font-size: 20px;
+  text-align: center;
+}
+.table_th,
+.table_td {
+  padding: 8px 10px;
+  /* text-transform: uppercase; */
+}
+.removeBtn {
+  font-size: 45px;
+  background-color: transparent;
+  border: 0;
+  padding: 9px 12px 0px;
+  outline: 0;
+  cursor: pointer;
+  color: rgba(78, 74, 74, 0.919);
+}

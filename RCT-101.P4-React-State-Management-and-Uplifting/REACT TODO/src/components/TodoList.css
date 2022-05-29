@@ -1,0 +1,69 @@
+.todo-heading {
+  color: white;
+  font-size: 27px;
+  margin-bottom: 30px;
+  text-shadow: #fff 0px 0px 5px, #fff 0px 0px 10px, #fff 0px 0px 15px,
+    #ff2d95 0px 0px 20px, #ff2d95 0px 0px 30px, #ff2d95 0px 0px 40px,
+    #ff2d95 0px 0px 50px, #ff2d95 0px 0px 75px;
+}
+
+.todo-input {
+  padding: 10.3px 10px;
+  margin-right: -6px;
+  border: 0;
+  outline: none;
+  border: 3px solid rgb(72, 0, 255);
+  width: 20em;
+  background-color: rgb(35, 35, 35);
+  color: rgb(255, 255, 255);
+  font-weight: 700;
+
+  /* background-image: linear-gradient(328deg, #af40ff, #5b42f3 50%, #00ddeb); */
+}
+
+.todo-input::placeholder {
+  color: #fff;
+}
+
+.btn-todo {
+  align-items: center;
+  background-image: linear-gradient(144deg, #af40ff, #5b42f3 50%, #00ddeb);
+  border: 0;
+  /* border-radius: 8px; */
+  box-shadow: rgba(151, 65, 252, 0.2) 0 15px 30px -5px;
+  box-sizing: border-box;
+  color: #ffffff;
+  display: flex;
+  font-family: Phantomsans, sans-serif;
+  font-size: 12px;
+  justify-content: center;
+  line-height: 1.7em;
+  max-width: 100%;
+  min-width: 140px;
+  padding: 8px 12px;
+  text-decoration: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  white-space: nowrap;
+  cursor: pointer;
+  display: inline-block;
+  margin: 5px;
+  transition: background-image 2s ease 1s;
+  font-weight: 600;
+  align-items: center;
+  text-shadow: 0 0 10px #ffffff;
+}
+
+.btn-todo:active,
+.btn-todo:hover {
+  outline: 0;
+  background-image: linear-gradient(328deg, #af40ff, #5b42f3 50%, #00ddeb);
+}
+
+@media (min-width: 768px) {
+  .btn-todo {
+    font-size: 15px;
+    min-width: 106px;
+  }
+}
