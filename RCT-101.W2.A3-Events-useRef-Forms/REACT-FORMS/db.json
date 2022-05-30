@@ -1,3 +1,40 @@
 {
-  "employeeData": []
+  "employeeData": [
+    {
+      "id": "7700027f-810f-44d5-a665-361aa599c96f",
+      "emplyeeName": "Arbaz",
+      "age": "20",
+      "address": "Ambernath (west)",
+      "department": "A",
+      "salary": "10000",
+      "maritalState": "False"
+    },
+    {
+      "id": "f9cf9146-019c-4066-96c9-57db31abd698",
+      "emplyeeName": "Salman",
+      "age": "21",
+      "address": "Ambernath (west)",
+      "department": "C",
+      "salary": "20000",
+      "maritalState": "False"
+    },
+    {
+      "id": "6e77d732-4c14-4aab-b66c-3464c903dc2e",
+      "emplyeeName": "Arman",
+      "age": "19",
+      "address": "Ambernath (west)",
+      "department": "B",
+      "salary": "30000",
+      "maritalState": "False"
+    },
+    {
+      "id": "13a346df-ff85-44b0-b03e-c000a12e134a",
+      "emplyeeName": "Anmol",
+      "age": "15",
+      "address": "Ambernath (west)",
+      "department": "B",
+      "salary": "15000",
+      "maritalState": "False"
+    }
+  ]
 }

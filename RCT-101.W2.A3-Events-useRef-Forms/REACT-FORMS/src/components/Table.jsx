@@ -3,6 +3,7 @@ import axios from "axios";
 import { v4 as uuid } from "uuid";
 import { TableItem } from "./TableItem";
 import { BsFillCaretLeftFill, BsCaretRightFill } from "react-icons/bs";
+import styles from "./Table.module.css";
 
 // created initialValue to form datas
 const initState = {
@@ -19,6 +20,8 @@ export const Table = () => {
   const [employeeData, setEmployeeData] = useState([]);
   const [toggle, setToggle] = useState(false);
   const [page, setPage] = useState(1);
+  const [order, setOrder] = useState("asc");
+  const [sort, setSort] = useState("salary");
 
   const { emplyeeName, age, address, department, salary, maritalState } = form;
 
@@ -38,24 +41,19 @@ export const Table = () => {
     e.preventDefault();
     createData({ ...form });
 
-    setForm({
-      emplyeeName: "",
-      age: "",
-      address: "",
-      department: "",
-      salary: "",
-      maritalState: "",
-    });
+    setForm(initState);
   };
 
   // getting data here
   useEffect(() => {
-    getData(page);
-  }, [page]);
+    getData(page, order, sort);
+  }, [page, order, sort]);
 
-  const getData = (page) => {
+  const getData = (page, order, sort) => {
     axios
-      .get(`http://localhost:8080/employeeData?_page=${page}&_limit=5`)
+      .get(
+        `http://localhost:8080/employeeData?_page=${page}&_limit=5&_sort=${sort}&_order=${order}`
+      )
       .then(({ data }) => {
         setEmployeeData(data);
         console.table(data);
@@ -102,6 +100,15 @@ export const Table = () => {
     setEmployeeData(employeeData.filter((data) => data.id !== id));
   };
 
+  // handling toggle ascending orde to descending order
+  const handleOrderChange = (e) => {
+    setOrder(e.target.value);
+  };
+
+  const handleSortChange = (e) => {
+    setSort(e.target.value);
+  };
+
   return (
     <div>
       <br />
@@ -112,7 +119,7 @@ export const Table = () => {
         <div>
           <h1> EMPLOYEE DETAILS</h1>
           <form onSubmit={onSubmit}>
-            <lable>Name: </lable>
+            <label>Name: </label>
             <input
               onChange={handleChange}
               type="text"
@@ -123,7 +130,7 @@ export const Table = () => {
             />
             <br />
             <br />
-            <lable>Age: </lable>
+            <label>Age: </label>
             <input
               onChange={handleChange}
               type="number"
@@ -134,7 +141,7 @@ export const Table = () => {
             />
             <br />
             <br />
-            <lable>Address: </lable>
+            <label>Address: </label>
             <input
               onChange={handleChange}
               type="text"
@@ -161,7 +168,7 @@ export const Table = () => {
             </select>
             <br />
             <br />
-            <lable>Salary: </lable>
+            <label>Salary: </label>
             <input
               onChange={handleChange}
               type="number"
@@ -172,7 +179,7 @@ export const Table = () => {
             />
             <br />
             <br />
-            <lable>Marital Status: </lable>
+            <label>Marital Status: </label>
             <input
               onChange={handleChange}
               type="checkbox"
@@ -190,6 +197,34 @@ export const Table = () => {
       ) : (
         <div>
           <h1>FORM DATA TABLE</h1>
+          <label>Sort By:</label>
+          <select
+            onChange={handleSortChange}
+            name="sort"
+            className={styles.sortType}
+          >
+            <optgroup label="Choose Sort By">
+              <option value="salary">Salary</option>
+              <option value="emplyeeName">EmplyeeName</option>
+              <option value="age">Age</option>
+              <option value="department">Department</option>
+            </optgroup>
+          </select>
+
+          <label>Order By:</label>
+          <select
+            onChange={handleOrderChange}
+            name="order"
+            className={styles.sort_order}
+          >
+            <optgroup label="Choose Order">
+              <option value="asc">Ascending</option>
+              <option value="desc">Descending</option>
+            </optgroup>
+          </select>
+          <br />
+          <br />
+
           <TableItem
             removeEmployeeData={removeEmployeeData}
             employeeData={employeeData}
