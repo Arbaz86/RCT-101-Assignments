@@ -54,7 +54,7 @@ export function Sidebar() {
                                 <Text m={"30px"}><CloseButton onClick={onClose} size='md' /></Text>
                             </Box>
                             {iconsAndData.map((data, i) => (
-                                <Link key={i} _hover={{ textdecoration: 'none' }}>
+                                <Link key={i + "0"} _hover={{ textdecoration: 'none' }}>
                                     <Box fontFamily={'system-ui'} letterSpacing={"0px"} fontWeight={"400"} borderRadius={"10px"} display={"flex"} textAlign={"left"} alignItems={"center"} padding={"10px"} marginLeft={"20px"} h={"55px"} backgroundColor={"transparent"} _hover={{ backgroundColor: "#0bc5ea", color: "#fff" }} w={"80%"} fontSize={"17px"}>
                                         <data.icon style={{ marginRight: "15px", }} fontSize={"19px"} /> {data.title}
                                     </Box>
@@ -69,7 +69,7 @@ export function Sidebar() {
                     <DrawerContent style={{ fontFamily: 'monospace' }}>
                         <DrawerHeader fontWeight='bold' fontSize={"23px"} m={"10px"}>Logo</DrawerHeader>
                         {iconsAndData.map((data, i) => (
-                            <Link key={i} _hover={{ textdecoration: 'none' }}>
+                            <Link key={i + "1"} _hover={{ textdecoration: 'none' }}>
                                 <Box fontFamily={'system-ui'} letterSpacing={"0px"} fontWeight={"400"} borderRadius={"10px"} display={"flex"} textAlign={"left"} alignItems={"center"} padding={"10px"} marginLeft={"20px"} h={"55px"} backgroundColor={"transparent"} _hover={{ backgroundColor: "#0bc5ea", color: "#fff" }} w={"80%"} fontSize={"17px"}>
                                     <data.icon style={{ marginRight: "15px", }} fontSize={"19px"} /> {data.title}
                                 </Box>
