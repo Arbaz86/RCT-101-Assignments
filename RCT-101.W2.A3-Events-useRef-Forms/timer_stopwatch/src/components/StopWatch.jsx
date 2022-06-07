@@ -20,7 +20,7 @@ export const StopWatch = () => {
           } else {
             setSec((prev) => {
               if (prev < 60) {
-                return prev + 0.5;
+                return prev + 1;
               } else {
                 setMin((prev) => {
                   if (prev < 60) {
