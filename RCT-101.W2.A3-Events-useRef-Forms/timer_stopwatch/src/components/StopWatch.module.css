@@ -1,0 +1,72 @@
+.container {
+  width: 30%;
+  margin: 20px auto;
+  background-color: #bbb;
+  padding: 10px;
+  background-image: linear-gradient(144deg, #af40ff, #5b42f3 50%, #00ddeb);
+  box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px,
+    rgba(6, 24, 44, 0.65) 0px 4px 6px -1px,
+    rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
+}
+.heading {
+  font-size: 50px;
+  color: #e0dfdc;
+  letter-spacing: 0.1em;
+  text-shadow: 0 -1px 0 #fff, 0 1px 0 #2e2e2e, 0 2px 0 #2c2c2c, 0 3px 0 #2a2a2a,
+    0 4px 0 #282828, 0 5px 0 #262626, 0 6px 0 #242424, 0 7px 0 #222,
+    0 8px 0 #202020, 0 9px 0 #1e1e1e, 0 10px 0 #1c1c1c, 0 11px 0 #1a1a1a,
+    0 12px 0 #181818, 0 13px 0 #161616, 0 14px 0 #141414, 0 15px 0 #121212,
+    0 22px 30px rgba(0, 0, 0, 0.9);
+}
+.stopWatch_div > span {
+  font-size: 40px;
+  width: 30%;
+  padding: 10px;
+  margin: 1px;
+  margin-top: -10px;
+  color: rgba(0, 0, 0, 0.6);
+  text-shadow: 3px 2px 3px rgba(255, 255, 255, 0.2);
+  font-weight: 800;
+}
+
+.btnDiv > button {
+  align-items: center;
+  background-image: linear-gradient(144deg, #af40ff, #5b42f3 50%, #00ddeb);
+  border: 0;
+  border-radius: 8px;
+  box-shadow: rgba(151, 65, 252, 0.2) 0 15px 30px -5px;
+  box-sizing: border-box;
+  color: #ffffff;
+  display: flex;
+  font-family: Phantomsans, sans-serif;
+  font-size: 15px;
+  justify-content: center;
+  line-height: 1em;
+  max-width: 100%;
+  min-width: 140px;
+  padding: 15px 15px;
+  text-decoration: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  white-space: nowrap;
+  cursor: pointer;
+  display: inline-block;
+  margin: 5px;
+  margin-top: 50px;
+  margin-bottom: 30px;
+  transition: background-image 2s ease 1s;
+}
+
+.btnDiv > button:active,
+.btnDiv > button:hover {
+  outline: 0;
+  background-image: linear-gradient(328deg, #af40ff, #5b42f3 50%, #00ddeb);
+}
+
+@media (min-width: 768px) {
+  .btnDiv > button {
+    font-size: 24px;
+    min-width: 196px;
+  }
+}
